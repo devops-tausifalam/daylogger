@@ -38,8 +38,8 @@
   'GRAD' 0,
   'opsz' 24
 }
-.ground-floor{
-    display: none;
+#ground-floor{
+    display: block;
 }
 .break{
     border: none;
@@ -161,22 +161,40 @@ body{
    object-fit: cover;
    border-radius: 15px;
 }
-.modal-base{
-    background:  rgba(0, 0, 0, 0.5)url(assets/modal-overlay.jpg);
+.modal-base {
+    display: none;
+    background: rgba(0, 0, 0, 0.5) url(assets/modal-overlay.jpg);
     background-size: cover;  /* Ensure the image covers the entire area */
     background-position: center; /* Center the background image */
     background-blend-mode: overlay;
     width: 100%;
     height: 100vh;
 }
-.modal-base .modal-main{
+.modal-base #close-modal {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 0.;
+    color: var(--logWhite);
+    outline: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.modal-base #close-modal:hover{
+    color: var(--logRed);
+}
+.modal-base .modal-main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+    transform: translate(-50%, -50%);
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
 }
-.modal-base .modal-main input[type="url"]{
+
+.modal-base .modal-main input[type="url"] {
     height: 40px;                     /* Set input height */
     border: none;                     /* Remove default border */
     border-radius: 30px;             /* Rounded corners */
@@ -185,15 +203,50 @@ body{
     font-size: 16px;                  /* Text size */
     margin: 0 5px;  
     color: var(--logTeal);
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid var(--logTeal);
+    background-color: rgba(255, 244, 234, 0.9);
+    border: 2px solid var(--logRed);
     transition: ease-in 0.0235s;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width/height */
 }
-.modal-base .modal-main input[type="url"]:focus{
+
+.modal-base .modal-main input[type="url"]:focus {
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0px 0px 30px var(--logTeal);
 }
-.modal-base .modal-main h4{
+
+.modal-base .modal-main h4 {
     font-size: 34px;
     color: var(--logWhite);
+}
+
+.modal-base .modal-main #drop-area {
+    padding: 20px;
+    background-color: rgba(255, 244, 234, 0.9);
+    text-align: center;
+    border-radius: 20px;
+    width: 100%; /* Allow it to take full width */
+    max-width: 300px; /* Optional: Set a max width */
+    box-sizing: border-box; /* Include padding in width/height */
+    overflow: hidden; /* Prevent overflow */
+    cursor: pointer;
+}
+.modal-base .modal-main #drop-area #image-view i.fa-cloud-arrow-up{
+    margin-top: 5px;
+    font-size: 34px;
+    color: var(--logRed);
+}
+.modal-base .modal-main #drop-area #image-view{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px dashed var(--logRed);
+    background-color: var(--logYellow);
+    background-size: cover;
+}
+.modal-base .modal-main #drop-area #image-view p{
+    display: block;
+    font-size: 13px;
+    color: var(--logRed);
+    margin: 5px;
 }

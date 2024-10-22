@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="main-wrapper">
-            <div class="ground-floor">
+            <div id="ground-floor">
             <div class="upper-shed">
                 <h2 class="courier-prime-bold-italic">Daylogger</h2>
                 <p class="courier-prime-regular-italic">Log / Plan / Reflect</p>
@@ -21,7 +21,7 @@
                 <p id="fetch-dateTime">-22-10-2024 / 12:03 PM</p>
                 <hr class="break"/>
                 <div class="thumb">
-                    <img src="" alt="log_image"/>
+                    <img src="assets/temp-thumb.jpg" alt="log_image"/>
                 </div>
                 <p id="log-data">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -39,11 +39,24 @@
             </div>
         </div>
             <!--modal for image upload/url-->
-            <div class="modal-base">
+            <div class="modal-base" id="modal-base">
+                <button id="close-modal">
+                    exit
+                </button>
                 <div class="modal-main">
                     <input type="url" autocomplete="off" placeholder="Image URL" id="log-uImage">
                     <h4>OR</h4>
-                    <input type="file" id="log-localimage">
+                    <label for="log-localimage" id="drop-area">
+                    <input type="file" id="log-localimage" accept="image/*" hidden>
+                    <div id="image-view">
+                        <!--icon for upload-->
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <p>
+                         drag and drop or click here to uplaod image. <br/><br/>
+                         <strong>16:9 image is preffered</strong>
+                        </p>
+                    </div>
+                    </label>
                 </div>
             </div>
         </div>
