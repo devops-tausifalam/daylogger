@@ -27,6 +27,7 @@
     --logYellow: #FADFA1;
     --logWhite: #FFF4EA;
     --logTeal: #7EACB5;
+    --logDarkRed: #8b0000;
 }
 *{
     font-family: "Courier Prime", monospace;
@@ -85,7 +86,7 @@ body{
 }
 
 .main-wrapper .log-sheet::-webkit-scrollbar-track {
-    background-color: var(--logYellow); /* Background of scrollbar */
+    background-color: var(--logWhite); /* Background of scrollbar */
 }
 
 .main-wrapper .log-sheet::-webkit-scrollbar-thumb {
@@ -112,25 +113,34 @@ body{
     outline: none;                    /* Remove outline on focus */
     font-size: 16px;                  /* Text size */
     margin: 0 5px;                   /* Slight margin on left and right */
-}
+    box-shadow: 2px 2px 0px 1px var(--logRed), 
+                10px 10px 15px rgba(0, 0, 0, 0.2);
+    background-color: var(--logDarkRed);
+    color: var(--logYellow);
 
+}
+.main-wrapper .log-input input[type="text"]::placeholder{
+    color: var(--logYellow);
+}
 .main-wrapper .log-input button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;                      /* Same height and width as the input */
     height: 40px;
-    background-color: var(--logRed);  /* Button background color */
+    background-color: var(--logDarkRed);  /* Button background color */
     border: none;                     /* Remove default button border */
     border-radius: 10px;              /* Rounded corners */
     cursor: pointer;   
     margin: 0 5px;                    /* Slight margin on left and right */
     color: var(--logWhite);           /* Button text color */
     transition: background-color 0.3s; /* Smooth transition for hover */
+    box-shadow: 2px 2px 0px 1px var(--logRed), 
+    10px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-wrapper .log-input button:hover {
-    background-color: darkred;        /* Darker on hover */
+    background-color: var(--logRed);        /* Darker on hover */
 }
 
 /* Media query for responsive design */
@@ -151,15 +161,8 @@ body{
 }
 .log-sheet .thumb{
     border-radius: 15px;
-    height: 215px;
-    background-color: var(--logTeal);
-}
-.log-sheet .thumb img{
-   width: 100%;
-   height: auto;
-   max-width: 100%;
-   object-fit: cover;
-   border-radius: 15px;
+    height: 200px;
+    background: url(assets/temp-thumb.jpg) center/cover var(--logTeal);
 }
 .modal-base {
     display: none;
