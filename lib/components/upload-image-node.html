@@ -1,0 +1,21 @@
+<!--modal for image upload/url-->
+<div class="modal-base" id="modal-base">
+    <button id="close-modal">
+        exit
+    </button>
+    <div class="modal-main">
+        <input type="url" autocomplete="off" placeholder="Image URL" id="log-uImage">
+        <h4>OR</h4>
+        <label for="log-localimage" id="drop-area">
+        <input type="file" id="log-localimage" accept="image/*" hidden>
+        <div id="image-view">
+            <!--icon for upload-->
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <p>
+                drag and drop or click here to uplaod image. <br/><br/>
+                <strong>16:9 image is preffered</strong>
+            </p>
+        </div>
+        </label>
+    </div>
+</div>
