@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .courier-prime-regular-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .courier-prime-bold-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }      
+:root{
+    --logRed: #C96868;
+    --logYellow: #FADFA1;
+    --logWhite: #FFF4EA;
+    --logTeal: #7EACB5;
+}
+*{
+    font-family: "Courier Prime", monospace;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.ground-floor{
+    display: none;
+}
+.break{
+    border: none;
+    border-top: 1px solid black;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--logYellow);
+}
+.main-wrapper{
+    width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+}
+.main-wrapper .upper-shed{
+    width: 100%;
+    line-height: 2.5px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.main-wrapper .upper-shed h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.main-wrapper .upper-shed p{
+    text-align: center;
+}
+.main-wrapper .log-sheet{
+    width:95%;
+    max-height: 430px;
+    padding: 5px;
+    margin: 5px auto;
+    background-color: var(--logWhite);
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 2px dashed var(--logRed);
+    overflow-y: auto;
+}
+/* Style scrollbar for WebKit browsers (Chrome, Safari) */
+.main-wrapper .log-sheet::-webkit-scrollbar {
+    width: 5px; /* Thin scrollbar */
+}
+
+.main-wrapper .log-sheet::-webkit-scrollbar-track {
+    background-color: var(--logYellow); /* Background of scrollbar */
+}
+
+.main-wrapper .log-sheet::-webkit-scrollbar-thumb {
+    background-color: var(--logRed); /* Color of scrollbar thumb */
+    border-radius: 15px; /* Rounded corners */
+}
+.main-wrapper .log-sheet #fetch-dateTime{         
+   color: var(--logRed);
+}
+.main-wrapper .log-input{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 10px auto;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.main-wrapper .log-input input[type="text"] {
+    flex-grow: 1;                     /* Input takes up remaining space */
+    height: 40px;                     /* Set input height */
+    border: none;                     /* Remove default border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 0 10px;                 /* Padding inside the input */
+    outline: none;                    /* Remove outline on focus */
+    font-size: 16px;                  /* Text size */
+    margin: 0 5px;                   /* Slight margin on left and right */
+}
+
+.main-wrapper .log-input button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;                      /* Same height and width as the input */
+    height: 40px;
+    background-color: var(--logRed);  /* Button background color */
+    border: none;                     /* Remove default button border */
+    border-radius: 10px;              /* Rounded corners */
+    cursor: pointer;   
+    margin: 0 5px;                    /* Slight margin on left and right */
+    color: var(--logWhite);           /* Button text color */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.main-wrapper .log-input button:hover {
+    background-color: darkred;        /* Darker on hover */
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    .main-wrapper .log-input {
+        flex-direction: column;        /* Stack elements on smaller screens */
+        align-items: stretch;          /* Stretch buttons to full width */
+    }
+
+    .main-wrapper .log-input button {
+        width: 100%;                   /* Full width for buttons on small screens */
+        margin: 5px 0;                /* Add vertical margin between stacked buttons */
+    }
+
+    .main-wrapper .log-input input[type="text"] {
+        margin: 5px 0;                /* Add vertical margin on small screens */
+    }
+}
+.log-sheet .thumb{
+    border-radius: 15px;
+    height: 215px;
+    background-color: var(--logTeal);
+}
+.log-sheet .thumb img{
+   width: 100%;
+   height: auto;
+   max-width: 100%;
+   object-fit: cover;
+   border-radius: 15px;
+}
+.modal-base{
+    background:  rgba(0, 0, 0, 0.5)url(assets/modal-overlay.jpg);
+    background-size: cover;  /* Ensure the image covers the entire area */
+    background-position: center; /* Center the background image */
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 100vh;
+}
+.modal-base .modal-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.modal-base .modal-main input[type="url"]{
+    height: 40px;                     /* Set input height */
+    border: none;                     /* Remove default border */
+    border-radius: 30px;             /* Rounded corners */
+    padding: 0 10px;                 /* Padding inside the input */
+    outline: none;                    /* Remove outline on focus */
+    font-size: 16px;                  /* Text size */
+    margin: 0 5px;  
+    color: var(--logTeal);
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--logTeal);
+    transition: ease-in 0.0235s;
+}
+.modal-base .modal-main input[type="url"]:focus{
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 30px var(--logTeal);
+}
+.modal-base .modal-main h4{
+    font-size: 34px;
+    color: var(--logWhite);
+}

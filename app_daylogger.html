@@ -3,22 +3,51 @@
     <head>
         <title>
             DayLogger 
-            <span id="version"></span>
         </title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta http-equiv="refresh" content="30"/>
         <link rel="stylesheet" href="lib/app_daylogger.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <div class="main-wrapper">
+            <div class="ground-floor">
+            <div class="upper-shed">
+                <h2 class="courier-prime-bold-italic">Daylogger</h2>
+                <p class="courier-prime-regular-italic">Log / Plan / Reflect</p>
+            </div>
             <div class="log-sheet">
-                <p id="fetch-dateTime"></p>
+                <div class="data-embed">
+                <p id="fetch-dateTime">-22-10-2024 / 12:03 PM</p>
+                <hr class="break"/>
+                <div class="thumb">
+                    <img src="" alt="log_image"/>
+                </div>
+                <p id="log-data">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                </div>
             </div>
             <div class="log-input">
-                <input id="log-iField" placeholder="Type Something..." type="text">
-                <button id="log-send">send_icon</button>
+                <button id="log-upload">
+                    <i class="fas fa-images"></i>
+                </button>
+                <input id="log-iField" autocomplete="off" placeholder="Type Something..." type="text">
+                <button id="log-send" onclick="logSave()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+            <!--modal for image upload/url-->
+            <div class="modal-base">
+                <div class="modal-main">
+                    <input type="url" autocomplete="off" placeholder="Image URL" id="log-uImage">
+                    <h4>OR</h4>
+                    <input type="file" id="log-localimage">
+                </div>
             </div>
         </div>
         <!-- Scripts -->
-        <script type="text/javascript" src="lib/app_daylogger.js"/>
+        <script type="text/javascript" src="lib/app_daylogger.js"></script>
     </body>
 </html>
