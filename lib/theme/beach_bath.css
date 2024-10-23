@@ -23,11 +23,11 @@
     font-style: italic;
   }      
 :root{
-    --logRed: #C96868;
+    /* --logRed: #C96868;
     --logYellow: #FADFA1;
     --logWhite: #FFF4EA;
     --logTeal: #7EACB5;
-    --logDarkRed: #8b0000;
+    --logDarkRed: #8b0000; */
 }
 *{
     font-family: "Courier Prime", monospace;
@@ -96,68 +96,54 @@ body{
 .main-wrapper .log-sheet #fetch-dateTime{         
    color: var(--logRed);
 }
-.main-wrapper .log-input{
+.main-wrapper .log-input {
     display: flex;
     align-items: center;
     width: 95%;
     margin: 10px auto;
     padding: 12px;
     box-sizing: border-box;
+    gap: 10px; /* Adds a gap between items for better control */
 }
+
 .main-wrapper .log-input input[type="text"] {
     flex-grow: 1;                     /* Input takes up remaining space */
     height: 40px;                     /* Set input height */
     border: none;                     /* Remove default border */
-    border-radius: 10px;             /* Rounded corners */
-    padding: 0 10px;                 /* Padding inside the input */
+    border-radius: 10px;              /* Rounded corners */
+    padding: 0 10px;                  /* Padding inside the input */
     outline: none;                    /* Remove outline on focus */
     font-size: 16px;                  /* Text size */
-    margin: 0 5px;                   /* Slight margin on left and right */
     box-shadow: 2px 2px 0px 1px var(--logRed), 
                 10px 10px 15px rgba(0, 0, 0, 0.2);
     background-color: var(--logDarkRed);
     color: var(--logYellow);
-
+    min-width: 0;                     /* Prevents input from overflowing */
 }
-.main-wrapper .log-input input[type="text"]::placeholder{
+
+.main-wrapper .log-input input[type="text"]::placeholder {
     color: var(--logYellow);
 }
+
 .main-wrapper .log-input button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;                      /* Same height and width as the input */
-    height: 40px;
+    width: 40px;                      /* Fixed button width */
+    height: 40px;                     /* Fixed button height */
     background-color: var(--logDarkRed);  /* Button background color */
     border: none;                     /* Remove default button border */
     border-radius: 10px;              /* Rounded corners */
-    cursor: pointer;   
-    margin: 0 5px;                    /* Slight margin on left and right */
+    cursor: pointer;
     color: var(--logWhite);           /* Button text color */
     transition: background-color 0.3s; /* Smooth transition for hover */
     box-shadow: 2px 2px 0px 1px var(--logRed), 
-    10px 10px 15px rgba(0, 0, 0, 0.2);
+                10px 10px 15px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;                   /* Prevent buttons from shrinking */
 }
 
 .main-wrapper .log-input button:hover {
-    background-color: var(--logRed);        /* Darker on hover */
-}
-
-/* Media query for responsive design */
-@media (max-width: 600px) {
-    .main-wrapper .log-input {
-        flex-direction: column;        /* Stack elements on smaller screens */
-        align-items: stretch;          /* Stretch buttons to full width */
-    }
-
-    .main-wrapper .log-input button {
-        width: 100%;                   /* Full width for buttons on small screens */
-        margin: 5px 0;                /* Add vertical margin between stacked buttons */
-    }
-
-    .main-wrapper .log-input input[type="text"] {
-        margin: 5px 0;                /* Add vertical margin on small screens */
-    }
+    background-color: var(--logRed);  /* Darker on hover */
 }
 .log-sheet .thumb{
     border-radius: 15px;
