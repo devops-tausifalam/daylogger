@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .courier-prime-regular {
     font-family: "Courier Prime", monospace;
     font-weight: 400;
@@ -24,10 +25,10 @@
 }
 
 :root {
-    --DarkPink: #F875AA;
-    --DarkCream: #FFDFDF;
-    --Cream: #FFF6F6;
-    --skyblue: #AEDEFC;
+    --DarkPink: #F875AA;  /* Updated to your DarkPink color */
+    --DarkCream: #FFDFDF; /* Updated to your DarkCream color */
+    --Cream: #FFF6F6;     /* Updated to your Cream color */
+    --skyblue: #AEDEFC;   /* Updated to your skyblue color */
 }
 
 * {
@@ -42,103 +43,125 @@
     'opsz' 24;
 }
 
-#ground-floor {
-    display: block;
-}
-
-.break {
-    border: none;
-    border-top: 1px solid black;
-}
-
 body {
     margin: 0;
     padding: 0;
     background-color: var(--DarkCream);
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height for body */
 }
 
 .main-wrapper {
-    width: 100vw;
-    height: 100%;
+    flex: 1; /* Allow main-wrapper to take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
     box-sizing: border-box;
+    position: relative; /* Ensure correct positioning */
 }
-
+#bottom-wrap-main{
+    display: block;
+}
+.main-wrapper .upper-wrap-main {
+    flex: 1; /* Allow this to take available space */
+    overflow-y: auto; /* Enable scrolling for this section */
+    padding: 5px; /* Reduced padding for aesthetics */
+    margin-top: 67px; /* Adjust margin to prevent content from hiding behind the fixed header */
+    margin-bottom: 70px; /* Ensure space for the log input */
+}
 .main-wrapper .upper-shed {
-    width: 100%;
-    line-height: 2.5px;
+    width: 100%; /* Set width to 100% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #454545;
     box-sizing: border-box;
-    z-index: 1;
+    padding: 20px 0px; /* Padding for better spacing */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
 }
 
-.main-wrapper .upper-shed h2 {
-    text-align: center;
-    font-size: 2rem;
+.main-wrapper .upper-shed h1 {
+    font-size: 1.5rem; /* Reduced heading size for a more compact look */
+    text-align: center; /* Center the heading */
+    margin: 0; /* Remove default margin for a cleaner appearance */
 }
 
 .main-wrapper .upper-shed p {
-    text-align: center;
+    text-align: center; /* Center the paragraph */
+    margin: 0; /* Remove default margin for a cleaner appearance */
+    font-size: 1rem; /* Optional: Adjust font size for consistency */
 }
 
-.main-wrapper .log-sheet {
-    width: 95%;
-    max-height: 430px;
-    padding: 5px;
-    margin: 5px auto;
-    background-color: var(--Cream);
+.main-wrapper .upper-wrap-main .log-sheet {
+    width: 100%;
+    max-height: calc(100vh - 130px); /* Adjust height to fit above the log-input */
+    padding: 10px; /* Padding for inner content */
+    padding-right: 10px;
+    margin: 10px auto; /* Margin to separate from the input */
+    background-color: var(--DarkCream); /* Use a soft background color */
     box-sizing: border-box;
-    border-radius: 15px;
-    border: 3px dashed var(--DarkPink);
-    overflow-y: auto;
-    /* Ensure scrollbar fits within the boundaries */
+    border: 2px solid var(--DarkPink);
+    border-radius: 15px; /* Rounded corners */
+    overflow-y: scroll; /* Enable scrolling if content overflows */
     position: relative; /* Ensure correct positioning */
 }
-
-/* Style scrollbar for WebKit browsers (Chrome, Safari) */
-.main-wrapper .log-sheet::-webkit-scrollbar {
+.main-wrapper .log-sheet #fetch-dateTime{
+    color: var(--DarkPink);
+}
+.main-wrapper .upper-wrap-main .sheet-container .log-sheet::-webkit-scrollbar {
     width: 8px; /* Slightly thinner scrollbar */
+    border-radius: 15px; /* Rounded corners for scrollbar */
 }
 
-.main-wrapper .log-sheet::-webkit-scrollbar-track {
-    background-color: var(--Cream); /* Background of scrollbar */
+.main-wrapper .upper-wrap-main .sheet-container .log-sheet::-webkit-scrollbar-track {
+    background-color: var(--DarkCream); /* Background of scrollbar */
     border-radius: 15px; /* Match the container’s radius */
 }
 
-.main-wrapper .log-sheet::-webkit-scrollbar-thumb {
+.main-wrapper .upper-wrap-main .sheet-container .log-sheet::-webkit-scrollbar-thumb {
     background-color: var(--DarkPink); /* Color of scrollbar thumb */
     border-radius: 15px; /* Rounded corners for scrollbar */
-    border: 2px solid var(--Cream); /* Create padding to fit scrollbar inside */
-}
-.main-wrapper .log-sheet #fetch-dateTime {
-    color: var(--DarkPink);
+    border: 2px solid var(--DarkCream); /* Create padding to fit scrollbar inside */
+    height: 40px; /* Fixed height for the scrollbar thumb */
 }
 
 .main-wrapper .log-input {
     display: flex;
     align-items: center;
     width: 95%;
-    margin: 10px auto;
+    height: 60px; /* Fixed height for input area */
+    margin: 10px auto; /* Add margin above and below */
     padding: 12px;
     box-sizing: border-box;
     gap: 10px; /* Adds a gap between items for better control */
+    position: fixed; /* Fixed position */
+    bottom: 10px; /* Position 10px above the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: rgba(255, 255, 255, 0.3); /* Frost glass effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border for definition */
 }
 
 .main-wrapper .log-input input[type="text"] {
     flex-grow: 1;
     height: 40px;
-    border: none;
-    border-radius: 10px;
+    border: none; /* No border */
+    border-radius: 10px; /* Match the log-input's border radius */
     padding: 0 10px;
-    outline: none;
+    outline: none; /* Remove outline */
     font-size: 16px;
-    box-shadow: 2px 2px 0px 1px var(--DarkCream),
-                10px 10px 15px rgba(0, 0, 0, 0.2);
-    background-color: var(--DarkPink);
-    color: var(--Cream);
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly lighter for visibility */
+    color: var(--DarkPink);
     min-width: 0;
 }
 
 .main-wrapper .log-input input[type="text"]::placeholder {
-    color: var(--Cream);
+    color: var(--DarkPink);
 }
 
 .main-wrapper .log-input button {
@@ -147,19 +170,18 @@ body {
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: var(--DarkPink);
-    border: none;
-    border-radius: 10px;
+    background-color: var(--DarkPink); /* Keep original color */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Match the log-input's border radius */
     cursor: pointer;
-    color: var(--Cream);
+    color: var(--DarkCream);
     transition: background-color 0.3s;
-    box-shadow: 2px 2px 0px 1px var(--DarkCream),
-                10px 10px 15px rgba(0, 0, 0, 0.2);
-    flex-shrink: 0;
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
+/* Remove active shadow effect */
 .main-wrapper .log-input button:active {
-    box-shadow: none;
+    background-color: var(--DarkPink); /* Keep the same color */
 }
 
 .log-sheet .thumb {
@@ -227,7 +249,7 @@ body {
 
 .modal-base .modal-main h4 {
     font-size: 34px;
-    color: var(--Cream);
+    color: var(--DarkCream);
 }
 
 .modal-base .modal-main #drop-area {
@@ -261,5 +283,4 @@ body {
     display: block;
     font-size: 13px;
     color: var(--DarkPink);
-    margin: 5px;
 }

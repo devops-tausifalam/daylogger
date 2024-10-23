@@ -6,15 +6,31 @@
         </title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <!-- <meta http-equiv="refresh" content="0"/> -->
-        <link rel="stylesheet" href="lib/theme/cotton_candy.css" type="text/css"/>
+        <link id="appTheme" rel="stylesheet" href="lib/theme/cotton_candy.css" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <div class="main-wrapper">
+        <!-- upper-wrap -->
+         <section class="upper-wrap-main">
             <div id="ground-floor">
             <div class="upper-shed">
-                <h2 class="courier-prime-bold-italic">Daylogger</h2>
-                <p class="courier-prime-regular-italic">Log / Plan / Reflect</p>
+                <h1 class="courier-prime-bold">Under Construction</h1>
+                <!-- <p class="courier-prime-regular-italic">Log / Plan / Reflect</p> -->
+            </div>
+            <!-- theme-switch-buttton here -->
+            <button id="theme-switch-btn">theme-switch</button>
+        <!-- log-sheets -->
+    <div class="sheet-container" id="sheet-container">
+            <div class="log-sheet">
+                <div class="data-embed">
+                <p id="fetch-dateTime">-22-10-2024 / 12:03 PM</p>
+                <hr class="break"/>
+                <div class="thumb"><!-- add image via js/css --></div>
+                <p id="log-data">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                </div>
             </div>
             <div class="log-sheet">
                 <div class="data-embed">
@@ -26,6 +42,11 @@
                 </p>
                 </div>
             </div>
+    </div>
+        <!-- log-sheet ending  -->
+            </div>
+        </section>  <!--Upper-wrap-ending-->
+        <section id="bottom-wrap-main">
             <div class="log-input">
                 <button id="log-upload">
                     <i class="fas fa-images"></i>
@@ -35,7 +56,10 @@
                     <i class="fas fa-paper-plane"></i>
                 </button>
             </div>
-        </div>
+        </section> <!--bottom wrap ending -->
+        
+
+
             <!--modal for image upload/url-->
             <div class="modal-base" id="modal-base">
                 <button id="close-modal">
