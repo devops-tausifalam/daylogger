@@ -7,53 +7,41 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <!-- <meta http-equiv="refresh" content="0"/> -->
         <link id="appTheme" rel="stylesheet" href="lib/theme/winter.css" type="text/css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <div class="main-wrapper">
         <!-- upper-wrap -->
          <section class="upper-wrap-main">
-            <div id="ground-floor">
+<div id="ground-floor">
             <div class="upper-shed">
-                <h1 class="courier-prime-bold">Under Construction</h1>
-                <!-- <p class="courier-prime-regular-italic">Log / Plan / Reflect</p> -->
+               <div class="action-box">
+                    <div class="hero-icon"><!-- place using css --></div>
+                        <input type="text" id="search-filter" placeholder="Explore your memories...">
+             <!-- action-butttons here -->
+                        <button id="theme-switch-btn">
+                            <i class='bx bxs-paint-roll'></i>
+                        </button>
+                        <button id="settings-page">
+                            <i class='bx bxs-cog'></i>
+                        </button>
+               </div>
             </div>
-            <!-- theme-switch-buttton here -->
-            <button id="theme-switch-btn">theme-switch</button>
         <!-- log-sheets -->
-    <div class="sheet-container" id="sheet-container">
-            <div class="log-sheet">
-                <div class="data-embed">
-                <p id="fetch-dateTime">-22-10-2024 / 12:03 PM</p>
-                <hr class="break"/>
-                <div class="thumb"><!-- add image via js/css --></div>
-                <p id="log-data">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                </div>
-            </div>
-            <div class="log-sheet">
-                <div class="data-embed">
-                <p id="fetch-dateTime">-22-10-2024 / 12:03 PM</p>
-                <hr class="break"/>
-                <div class="thumb"><!-- add image via js/css --></div>
-                <p id="log-data">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                </div>
-            </div>
+    <div class="post-container" id="post-container">
+        <!-- posts -->
     </div>
-        <!-- log-sheet ending  -->
-            </div>
+        <!-- log-sheet ending / ground-floor  -->
+    </div>
         </section>  <!--Upper-wrap-ending-->
         <section id="bottom-wrap-main">
             <div class="log-input">
-                <button id="log-upload">
-                    <i class="fas fa-images"></i>
-                </button>
                 <input id="log-iField" autocomplete="off" placeholder="Type Something..." type="text">
+                <button id="log-upload">
+                    <i class='bx bx-image-add'></i>
+                </button>
                 <button id="log-send" onclick="logSave()">
-                    <i class="fas fa-paper-plane"></i>
+                    <i class='bx bx-send'></i>
                 </button>
             </div>
         </section> <!--bottom wrap ending -->
@@ -81,6 +69,11 @@
                     </label>
                 </div>
             </div>
+
+            <!-- graphic clip for background -->
+             <div class="clip-background-art">
+
+             </div>
         </div>
         <!-- Scripts -->
         <script type="text/javascript" src="lib/app_daylogger.js"></script>
