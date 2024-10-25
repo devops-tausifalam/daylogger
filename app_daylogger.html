@@ -15,9 +15,19 @@
          <section class="upper-wrap-main">
 <div id="ground-floor">
             <div class="upper-shed">
+                <div class="modes">
+                    <button class="pomodoro-mode">
+                        <i class='bx bxs-hourglass-bottom'></i>
+                    </button>
+                    <button class="planner">
+                        <i class='bx bx-calendar'></i>
+                    </button>
+                    <button class="stats">
+                        <i class='bx bx-line-chart'></i>
+                    </button>
+                </div>
                <div class="action-box">
-                    <div class="hero-icon"><!-- place using css --></div>
-                        <input type="text" id="search-filter" placeholder="Explore your memories...">
+                        <input type="text" id="search-filter" placeholder="Explore">
              <!-- action-butttons here -->
                         <button id="theme-switch-btn">
                             <i class='bx bxs-paint-roll'></i>
@@ -28,8 +38,14 @@
                </div>
             </div>
         <!-- log-sheets -->
-    <div class="post-container" id="post-container">
+    <div class="log-container" id="log-container">
         <!-- posts -->
+    <div class="log-tree">
+         <ul>
+            <li id="fetch-dateTime">25/10/2024, 18:03:54</li>
+            <li id="tree-text">Good things take time :)</li>
+         </ul>
+    </div>
     </div>
         <!-- log-sheet ending / ground-floor  -->
     </div>
@@ -45,35 +61,7 @@
                 </button>
             </div>
         </section> <!--bottom wrap ending -->
-        
 
-
-            <!--modal for image upload/url-->
-            <div class="modal-base" id="modal-base">
-                <button id="close-modal">
-                    exit
-                </button>
-                <div class="modal-main">
-                    <input type="url" autocomplete="off" placeholder="Image URL" id="log-uImage">
-                    <h4>OR</h4>
-                    <label for="log-localimage" id="drop-area">
-                    <input type="file" id="log-localimage" accept="image/*" hidden>
-                    <div id="image-view">
-                        <!--icon for upload-->
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                        <p>
-                         drag and drop or click here to uplaod image. <br/><br/>
-                         <strong>16:9 image is preffered</strong>
-                        </p>
-                    </div>
-                    </label>
-                </div>
-            </div>
-
-            <!-- graphic clip for background -->
-             <div class="clip-background-art">
-
-             </div>
         </div>
         <!-- Scripts -->
         <script type="text/javascript" src="lib/app_daylogger.js"></script>
