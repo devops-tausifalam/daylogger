@@ -88,8 +88,8 @@ div.upper-shed .modes .pomodoro-mode::after{
     white-space: nowrap; /* Prevents text wrapping if not desired */
     display: block; /* Ensures text is displayed as a block element */
 }
-div.upper-shed .modes .planner::after{
-    content: 'Plan';
+div.upper-shed .modes .timebox::after{
+    content: 'Timebox';
     position: absolute;
     top: 100%;
     left: 50%;
