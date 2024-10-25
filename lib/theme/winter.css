@@ -1,0 +1,58 @@
+:root{
+
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+div.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid;
+}
+div.upper-shed{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 2px solid;
+    text-align: center; /* temp */
+}
+div.sheet-container{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 1px dashed;
+}
+div.log-sheet{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 2px solid;
+}
+div.log-sheet .thumb{
+    box-sizing: border-box;
+    width: 100%;
+    aspect-ratio: 16/9;
+    max-height: calc(100*(9/16)); /* calculate height on the basis of width of 16/9 */
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 2px solid;
+}
+div.modal-base{
+    display: none;
+}
+div.log-input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 2px solid;
+}
