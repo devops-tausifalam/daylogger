@@ -14,6 +14,11 @@
         <!-- upper-wrap -->
          <section class="upper-wrap-main">
             <div class="upper-shed">
+                <div class="hero-zone">
+                    <div class="heading">
+                        <h1 class="welcomeMssg">October, 26 <br/> 2024</h1>
+                    </div>
+                </div>
                 <div class="modes">
                     <button class="pomodoro-mode">
                         <i class='bx bxs-hourglass-bottom'></i>
@@ -36,25 +41,33 @@
                         </button>
                </div>
             </div>
+        </section> 
+
         <!-- log-sheets -->
-    <div class="log-container" id="log-container">
+        <section class="content-wrapper-main">
+            <div class="log-container" id="log-container">
         <!-- posts -->
-    <div class="log-tree">
-         <ul>
-            <li id="fetch-dateTime">25/10/2024, 18:03:54</li>
-            <li id="tree-text">Good things take time :)</li>
-         </ul>
-    </div>
-    </div>
-        <!-- log-sheet ending / ground-floor  -->
-        </section>  <!--Upper-wrap-ending-->
+        <div class="log-data">
+            <ul class="log-tree">
+                <li>
+                    <div class="log-entry">
+                        <span class="log-date" id="fetch-dateTime">25/10/2024, 18:03:54</span>
+                        <br/>
+                        <span class="log-text" id="tree-text">Good things take time</span>
+                    </div>
+                </li>
+                <!-- Additional log entries can be added here -->
+            </ul>
+        </div>  
+            </div>
+        </section>
         <section id="bottom-wrap-main">
             <div class="log-input">
-                <input id="user-input" autocomplete="off" placeholder="Type Something..." type="text">
+                <input id="user-input" autocomplete="off" placeholder="Write here" type="text">
                 <button id="log-upload">
                     <i class='bx bx-image-add'></i>
                 </button>
-                <button id="log-send" onclick="logSave()">
+                <button id="log-send" onclick="saveLog()">
                     <i class='bx bx-send'></i>
                 </button>
             </div>

@@ -41,6 +41,7 @@ body,html{
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 i{
     color: var(--accent-dark);
@@ -55,16 +56,23 @@ div.main-wrapper{
 }
 div.upper-shed{
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
     padding: 10px;
     margin: 0 0 10px 0;
 }
+div.upper-shed div.hero-zone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    margin: 0;
+}
 div.upper-shed .modes{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 10px 20px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 div.upper-shed .modes button{
     padding: 15px;
@@ -74,7 +82,7 @@ div.upper-shed .modes button{
     color: var(--secondary);
     border-radius: 50%;
     position: relative;
-    margin: 0 10px 0 10px;
+    margin: 0 10px calc(15px + 0.9em) 10px;
     cursor: pointer;
 }
 div.upper-shed .modes .pomodoro-mode::after{
@@ -148,7 +156,7 @@ div.upper-shed .action-box button{
     text-align: center;
     cursor: pointer;
 }
-div.log-container {
+/* div.log-container {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -156,28 +164,30 @@ div.log-container {
     padding: 10px;
     margin: 10px 0 100px 0;
     border: 1px dashed var(--primary);
+} */
+div.log-container{
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 10px;
+    margin: 5px 0 100px 0;
 }
-
-div.log-container .log-tree {
+div.log-container div.log-data{
     display: flex;
     flex-direction: column;
-    width: 100%; /* Ensures log-tree takes full width */
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px dashed var(--primary);
 }
-
-div.log-container .log-tree ul {
-    list-style-type: none;
-    padding: 0;
+div.log-container div.log-data ul.log-tree{
+    list-style: none;
     margin: 0;
-    width: 100%; /* Constrains width to container */
+    padding: 10px;
 }
-
-div.log-container .log-tree li {
-    width: 100%; /* Prevents overflow by taking full width of container */
-    word-wrap: break-word; /* Wraps long words to fit within the container */
-    white-space: normal; /* Allows text to wrap normally */
-    margin: 5px 0; /* Adds space between list items */
+div.log-container div.log-data ul.log-tree li{
+    margin: 10px 0 10px 0;
+    width: 100%;
 }
-
 div.log-input {
     box-sizing: border-box;
     width: 90%;
