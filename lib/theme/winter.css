@@ -119,6 +119,7 @@ div.upper-shed .modes .stats::after{
     display: block; /* Ensures text is displayed as a block element */
 }
 div.upper-shed .action-box{
+    display: none; 
     /* position: fixed;
     top: 100px;
     left: 50%;
