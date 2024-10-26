@@ -196,7 +196,7 @@ div.log-input {
     transform: translateX(-50%);
 }
 
-div.log-input #log-iField {
+div.log-input #user-input {
     outline: none;
     border: none;
     width: calc(100% - 30px); /* Adjust width to consider padding */
