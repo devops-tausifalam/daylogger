@@ -66,7 +66,7 @@ div.upper-shed div.hero-zone{
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 10px 15px;
+    padding: 5px 10px;
     margin: 0;
 }
 div.upper-shed .modes{
@@ -128,7 +128,7 @@ div.upper-shed .action-box{
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    padding: 10px 15px;
+    padding: 5px 10px;
     margin: 10px auto;
     width: 90%;
     border-radius: 30px;
@@ -139,7 +139,7 @@ div.upper-shed .action-box input{
     border: none;
     width: calc(100% - 30px); /* Adjust width to consider padding */
     height: 100%; /* Match height to the parent */
-    padding: 10px;
+    padding: 5px;
     margin-left: 0; /* Set left margin to 0 */
     border-radius: 30px;
     background-color: transparent;
@@ -149,7 +149,7 @@ div.upper-shed .action-box input{
 div.upper-shed .action-box button{
     outline: none;
     border: none;
-    padding: 10px;
+    padding: 5px;
     margin: 0 2px 0 2px;
     background-color: transparent;
     border-radius: 30px;
