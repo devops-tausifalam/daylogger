@@ -66,7 +66,7 @@ div.upper-shed div.hero-zone{
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin: 0;
 }
 div.upper-shed .modes{
@@ -128,7 +128,7 @@ div.upper-shed .action-box{
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin: 10px auto;
     width: 90%;
     border-radius: 30px;
@@ -139,7 +139,7 @@ div.upper-shed .action-box input{
     border: none;
     width: calc(100% - 30px); /* Adjust width to consider padding */
     height: 100%; /* Match height to the parent */
-    padding: 5px;
+    padding: 10px;
     margin-left: 0; /* Set left margin to 0 */
     border-radius: 30px;
     background-color: transparent;
@@ -168,7 +168,7 @@ div.upper-shed .action-box button{
 div.log-container{
     box-sizing: border-box;
     width: 100vw;
-    padding: 5px;
+    padding: 10px;
     margin: 5px 0 100px 0;
 }
 div.log-container div.log-data{
@@ -182,7 +182,7 @@ div.log-container div.log-data{
 div.log-container div.log-data ul.log-tree{
     list-style: none;
     margin: 0;
-    padding: 5px;
+    padding: 10px;
 }
 div.log-container div.log-data ul.log-tree li{
     margin: 10px 0 10px 0;
@@ -191,7 +191,7 @@ div.log-container div.log-data ul.log-tree li{
 div.log-input {
     box-sizing: border-box;
     width: 90%;
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin: 0 0 12px 0;
     display: flex;
     justify-content: center;
