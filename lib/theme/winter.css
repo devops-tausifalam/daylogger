@@ -224,15 +224,16 @@ div.log-container div.log-data ul.log-tree li{
 }
 div.log-container div.log-data ul.log-tree li::after{
     content: '';
+    float: right;
     position: absolute;
-    top: 120%; /* Center vertically for each entry */
-    left: 85%; /* Adjust to position the pointer horizontally */
-    transform: translateY(-50%) rotate(270deg); /* Center the pointer vertically */
+    top: 15%; /* Center vertically for each entry */
+    left: 95%;
+    transform: rotate(270deg); /* Center the pointer vertically */
     transform-origin: left center;
     width: 0;
     height: 0;
-    border: 10px solid transparent; /* Creates triangle effect */
-    border-right: 10px solid var(--primary); /* Pointer color */
+    border: 20px solid transparent; /* Creates triangle effect */
+    border-right: 15px solid var(--primary); /* Pointer color */
 }
 div.log-input {
     box-sizing: border-box;
@@ -274,5 +275,3 @@ div.log-input #log-upload, #log-send{
     text-align: center;
     cursor: pointer;
 }
-
-/* functionality-main */
