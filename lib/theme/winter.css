@@ -226,7 +226,7 @@ div.log-container div.log-data ul.log-tree li::after{
     content: '';
     float: right;
     position: absolute;
-    top: 15%; /* Center vertically for each entry */
+    top: 16%; /* Center vertically for each entry */
     left: 95%;
     transform: rotate(270deg); /* Center the pointer vertically */
     transform-origin: left center;
