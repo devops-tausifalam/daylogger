@@ -71,6 +71,8 @@ div.upper-shed div.hero-zone{
 }
 div.upper-shed .modes{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -171,6 +173,7 @@ div.log-container{
     overflow-y: auto;
     box-sizing: border-box;
     width: 100vw;
+    height: 100vh;
     padding: 10px;
     margin: 5px 0 100px 0;
 
@@ -183,21 +186,13 @@ div.log-container div.log-data{
     width: 100%;
     position: relative;
 }
-div.log-container div.log-data .sectionName{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 15px;
-    margin: 0;
-    font-size: 2rem;
-}
 div.log-container div.log-data .sectionName .bxs-angry{
     font-size: 2rem;
     margin: 6px 0 0 5px;
     color: var(--emotionRed);
 }
 div.log-container div.log-data ul.log-tree{
+    align-self: flex-end;
     box-sizing: border-box;
     list-style: none;
     margin: 0;
