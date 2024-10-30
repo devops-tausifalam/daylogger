@@ -41,7 +41,7 @@ body,html{
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 i{
     color: var(--accent-dark);
@@ -168,12 +168,12 @@ div.upper-shed .action-box button{
 
 /* styling for id = content-wrapper-main */
 div.log-container{
-    max-height: 400px;
     overflow-y: auto;
     box-sizing: border-box;
     width: 100vw;
     padding: 10px;
     margin: 5px 0 100px 0;
+
 }
 div.log-container div.log-data{
     display: flex;
@@ -229,18 +229,18 @@ div.log-container div.log-data ul.log-tree li{
 }
 div.log-input {
     box-sizing: border-box;
-    width: 90%;
+    width: 95%;
     padding: 10px 15px;
-    margin: 0 0 12px 0;
+    margin: 12px 0 12px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
     /* box-shadow: 0px 0px 2px #8a8a8a; */
     border: 1.5px solid var(--blue);
-    border-radius: 30px;
+    border-radius: 10px; 
     position: fixed;
-    bottom: 10px;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -250,15 +250,16 @@ div.log-input #user-input {
     border: none;
     width: calc(100% - 30px); /* Adjust width to consider padding */
     height: 100%; /* Match height to the parent */
-    padding: 10px;
-    margin-left: 0; /* Set left margin to 0 */
-    border-radius: 30px;
+    padding: 15px 10px 0px 10px;
+    margin: 0;
+    border-radius: 50px;
     background-color: transparent;
     color: var(--white);
     font-size: 1rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    resize: none;
 }
 div.log-input #log-upload, #log-send{
     outline: none;
