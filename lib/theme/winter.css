@@ -243,7 +243,6 @@ div.log-input {
     bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
 }
 div.log-input #user-input {
     outline: none;
