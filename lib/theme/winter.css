@@ -21,7 +21,6 @@ div.main-wrapper{
 }
 div.upper-wrap-main{
     background-color: var(--primary);
-    padding-bottom: 15px;
 }
 div.upper-shed{
     box-sizing: border-box;
@@ -100,6 +99,17 @@ div.upper-shed .modes .blurt::after{
     white-space: nowrap; /* Prevents text wrapping if not desired */
     display: block; /* Ensures text is displayed as a block element */
 }
+div.upper-shed .modes .highlights-coffee::after{
+    content: 'Coffee';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--secondary);
+    font-size: 0.9em;
+    white-space: nowrap; /* Prevents text wrapping if not desired */
+    display: block; /* Ensures text is displayed as a block element */
+}
 div.upper-shed .action-box{
     /* position: fixed;
     top: 100px;
@@ -141,21 +151,25 @@ div.upper-shed .action-box button{
 div.upper-shed .hero-zone .heading h1{
     color: var(--secondary);
 }
-div.fab {
+div.fab-contents {
     align-self: flex-end;
     position: fixed;
     bottom: 15px;
     margin: 15px;
 }
-div.fab .blurt{
+div.fab button{
     padding: 15px;
     border: none;
     outline: none;
     background-color: var(--primary);
     color: var(--secondary);
     cursor: pointer;
-    border-radius: 20px;
+    margin: 2px;
+    border-radius: 50%;
 }
-div.fab .blurt i{
+div.fab button.inside-fxn{
+    display: none;
+}
+div.fab button i{
     font-size: 24px;
 }
