@@ -24,7 +24,7 @@ div.log-container {
     overflow-y: scroll;
     box-sizing: border-box;
     width: 100vw;
-    height: calc(100vh - 190px); /* Adjust height based on log-input */
+    height: calc(100vh - 210px); /* Adjust height based on log-input */
     padding: 5px; /* Reduced padding */
     margin: 0 0 150px 0;
     display: flex;
