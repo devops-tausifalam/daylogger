@@ -6,22 +6,30 @@ body,html{
     padding: 0;
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 *{
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+div.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
 div.log-container {
     overflow-y: auto;
     box-sizing: border-box;
     width: 100vw;
-    height: calc(100vh - 80px); /* Adjust height based on log-input */
+    height: calc(100vh - 130px); /* Adjust height based on log-input */
     padding: 5px; /* Reduced padding */
-    margin: auto 0 80px 0;
+    margin: 0 0 150px 0;
     display: flex;
     flex-direction: column-reverse;
+    border: 1px solid red; /* For visualization */
 }
 
 div.log-container div.log-data ul.log-tree {
@@ -45,7 +53,9 @@ div.log-container div.log-data ul.log-tree li {
     color: var(--secondary, #ffffff);
     overflow-wrap: break-word;
 }
-
+.bottom-wrap-main{
+    border: 1px solid blue; /* For visualization */
+}
 div.log-input {
     width: 90%;
     padding: 6px 10px;
@@ -54,7 +64,6 @@ div.log-input {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    border: 1px solid var(--blue);
     border-radius: 50px;
     position: fixed;
     bottom: 10px;
