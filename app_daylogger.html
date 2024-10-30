@@ -52,22 +52,15 @@
             <div class="memory-of-day">
 
             </div>
-            <ul class="log-tree">
+            <ul class="log-tree" id="log-tree">
+                <!-- DOM MANIPULATION -->
                 <li>
                     <div class="log-entry">
-                        <span class="log-date" id="fetch-dateTime">25/10/2024, 18:03:54</span>
-                        <br/>
-                        <span class="log-text" id="tree-text">Good things take time</span>
+                      <!--  <span class="log-date">${data.blurt_timestamp}</span>
+                        <br/> -->
+                        <span class="log-text">test-text </span>
                     </div>
                 </li>
-                <li>
-                    <div class="log-entry">
-                        <span class="log-date" id="fetch-dateTime">25/10/2024, 18:03:54</span>
-                        <br/>
-                        <span class="log-text" id="tree-text">Good things take time</span>
-                    </div>
-                </li>
-                <!-- Additional log entries can be added here -->
             </ul>
         </div>  
             </div>
@@ -78,7 +71,7 @@
                 <button id="log-upload">
                     <i class='bx bx-image-add'></i>
                 </button>
-                <button id="log-send" onclick="saveLog()">
+                <button id="log-send">
                     <i class='bx bx-send'></i>
                 </button>
             </div>
@@ -86,6 +79,6 @@
 
         </div>
         <!-- Scripts -->
-        <script type="text/javascript" src="lib/app_daylogger.js"></script>
+        <script type="text/javascript" src="lib/main.js"></script>
     </body>
 </html>
