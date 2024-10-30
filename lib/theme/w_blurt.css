@@ -1,0 +1,102 @@
+/* blurt.html */
+@import url(global.css);
+
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+*{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+div.log-container {
+    overflow-y: auto;
+    box-sizing: border-box;
+    width: 100vw;
+    height: calc(100vh - 80px); /* Adjust height based on log-input */
+    padding: 5px; /* Reduced padding */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+div.log-container div.log-data ul.log-tree {
+    align-self: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 5px; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* Slightly smaller gap between items */
+}
+
+div.log-container div.log-data ul.log-tree li {
+    align-self: flex-end;
+    margin: 2px 0;
+    width: fit-content;
+    max-width: 230px; /* Slightly reduced max width */
+    padding: 5px 8px; /* Reduced padding */
+    border-radius: 4px; /* Slightly smaller border-radius */
+    background-color: var(--primary);
+    color: var(--secondary, #ffffff);
+    overflow-wrap: break-word;
+}
+
+div.log-input {
+    width: 90%;
+    padding: 6px 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    border: 1px solid var(--blue);
+    border-radius: 50px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+div.log-input #user-input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 8px 12px;
+    margin: 0;
+    border-radius: 15px;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.7; /* Adjust line height for vertical centering */
+    height: 30px; /* Set height to control vertical alignment */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    resize: none;
+    max-height: 50px;
+}
+
+/* Adjust placeholder styling for better centering */
+div.log-input #user-input::placeholder {
+    color: var(--primary); /* Matches text color */
+    opacity: 0.8;
+    line-height: 1.7; /* Matches line height of the input */
+}
+
+
+div.log-input #log-upload, #log-send {
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 0 5px;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
