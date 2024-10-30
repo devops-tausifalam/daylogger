@@ -52,6 +52,7 @@ div.log-container div.log-data ul.log-tree li {
     background-color: var(--primary);
     color: var(--secondary, #ffffff);
     overflow-wrap: break-word;
+    position: relative;
 }
 div.log-input {
     width: 90%;
@@ -74,13 +75,13 @@ div.log-input #user-input {
     outline: none;
     border: none;
     width: 100%;
-    padding: 8px 12px;
+    padding: 5px 10px;
     margin: 0;
     border-radius: 15px;
     background-color: transparent;
     color: var(--white);
     font-size: 1rem;
-    line-height: 1.7; /* Adjust line height for vertical centering */
+    line-height: 1.8; /* Adjust line height for vertical centering */
     height: 30px; /* Set height to control vertical alignment */
     overflow: hidden;
     resize: none;

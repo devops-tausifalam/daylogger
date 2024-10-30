@@ -12,11 +12,11 @@
     <body>
         <div class="main-wrapper">
         <!-- upper-wrap -->
-         <section class="upper-wrap-main">
+         <div class="upper-wrap-main">
             <div class="upper-shed">
                 <div class="hero-zone">
                     <div class="heading">
-                        <h1 class="welcomeMssg">October, 26 <br/> 2024</h1>
+                       <!-- DOM MANIPULATION -->
                     </div>
                 </div>
                 <div class="modes">
@@ -28,9 +28,6 @@
                     </button>
                     <button class="stats">
                         <i class='bx bx-line-chart'></i>
-                    </button>
-                    <button class="blurt" onclick="location.href='lib/pages/blurt.html'">
-                        <i class='bx bxs-message-rounded-dots'></i>
                     </button>
                 </div>
                <div class="action-box">
@@ -44,7 +41,14 @@
                         </button>
                </div>
             </div>
-        </section> 
+        </div> 
+
+        <div class="fab">
+            <button class="blurt" onclick="location.href='lib/pages/blurt.html'">
+                <i class='bx bxs-message-rounded-dots'></i>
+            </button>
+        </div>
+    </div>
         <!-- Scripts -->
         <script type="text/javascript" src="lib/main.js"></script>
     </body>
