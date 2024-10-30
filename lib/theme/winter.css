@@ -85,6 +85,17 @@ div.upper-shed .modes .stats::after{
     white-space: nowrap; /* Prevents text wrapping if not desired */
     display: block; /* Ensures text is displayed as a block element */
 }
+div.upper-shed .modes .blurt::after{
+    content: 'Blurt';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--primary);
+    font-size: 0.9em;
+    white-space: nowrap; /* Prevents text wrapping if not desired */
+    display: block; /* Ensures text is displayed as a block element */
+}
 div.upper-shed .action-box{
     /* position: fixed;
     top: 100px;
