@@ -20,11 +20,12 @@ div.main-wrapper{
     box-sizing: border-box;
     border: 1px solid red; /* For visualization */
     max-height: 100%;
+    max-width: 100%;
 }
 div.log-container {
     overflow-y: scroll;
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - 80px); /* Adjust height based on log-input */
     padding: 5px; /* Reduced padding */
     margin-bottom: 80px;
