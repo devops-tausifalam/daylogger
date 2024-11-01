@@ -22,6 +22,21 @@ div.main-wrapper{
     max-height: 100%;
     max-width: 100%;
 }
+div.main-wrapper .upper-controls{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.main-wrapper .upper-controls button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+div.main-wrapper .upper-controls button i{
+    font-size: 1.5rem;
+}
 div.log-container {
     overflow-y: scroll;
     box-sizing: border-box;
@@ -33,7 +48,13 @@ div.log-container {
     flex-direction: column-reverse;
     border: 1px solid red; /* For visualization */
 }
-
+div.log-container .doodle-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.4;
+}
 div.log-container div.log-data ul.log-tree {
     list-style: none;
     margin: 0;
@@ -46,7 +67,7 @@ div.log-container div.log-data ul.log-tree li {
     align-self: flex-end;
     margin: 2px 0;
     width: fit-content;
-    max-width: 230px; /* Slightly reduced max width */
+    max-width: 70%;
     padding: 5px 8px; /* Reduced padding */
     border-radius: 4px; /* Slightly smaller border-radius */
     background-color: var(--primary);
