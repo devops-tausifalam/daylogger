@@ -28,7 +28,7 @@ div.log-container {
     width: 100vw;
     height: calc(100vh - 80px); /* Adjust height based on log-input */
     padding: 5px; /* Reduced padding */
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     display: flex;
     flex-direction: column-reverse;
     border: 1px solid red; /* For visualization */
@@ -56,7 +56,7 @@ div.log-container div.log-data ul.log-tree li {
 }
 div.log-input {
     width: 90%;
-    padding: 6px 10px;
+    padding: 3px 10px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -68,14 +68,14 @@ div.log-input {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    min-height: 58px;
+    min-height: 48px;
 }
 
 div.log-input #user-input {
     outline: none;
     border: none;
     width: 100%;
-    padding: 5px 10px;
+    padding: 3px 10px;
     margin: 0;
     border-radius: 15px;
     background-color: transparent;
