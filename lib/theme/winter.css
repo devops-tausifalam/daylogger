@@ -1,4 +1,4 @@
-@import url(global.css);
+@import url('global.css');
 
 *{
     font-family: "Lato", sans-serif;
@@ -163,11 +163,23 @@ div.fab button{
     outline: none;
     background-color: var(--primary);
     color: var(--secondary);
-    cursor: pointer;
-    margin: 2px;
+    margin-bottom: 10px;
     border-radius: 50%;
 }
-div.fab button.inside-fxn{
+div.fab button:nth-child(1){
+    background-color: var(--secondary);
+    color: var(--primary);
+    animation: jackInTheBox 0.5s;
+}
+div.fab button:nth-child(2){
+    background-color: var(--secondary);
+    color: var(--primary);
+    animation: jackInTheBox 0.5s;
+}
+.active {
+    animation: rotateIn 0.5s;
+}
+div.fab button.inside-fxn-coffee, button.inside-fxn-blurt{
     display: none;
 }
 div.fab button i{
