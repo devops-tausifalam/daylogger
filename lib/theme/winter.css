@@ -179,7 +179,7 @@ div.fab button:nth-child(2){
 .active {
     animation: rotateIn 0.5s;
 }
-div.fab button.inside-fxn-coffee, button.inside-fxn-blurt{
+div.fab button.inside-fxn-coffee, button.inside-fxn-boxoul{
     display: none;
 }
 div.fab button i{

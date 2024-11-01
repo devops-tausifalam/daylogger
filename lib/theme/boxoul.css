@@ -6,6 +6,7 @@ body,html{
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 *{
     font-family: "Lato", sans-serif;
@@ -18,7 +19,6 @@ div.main-wrapper{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    border: 1px solid red; /* For visualization */
     max-height: 100%;
     max-width: 100%;
 }
@@ -27,6 +27,14 @@ div.main-wrapper .upper-controls{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--primary);
+    padding: 0px 10px;
+    box-shadow: 0px 0px 5px var(--primary);
+    z-index: 1;
+}
+div.main-wrapper .upper-controls h1{
+    font-size: 1rem;
+    color: var(--secondary);
 }
 div.main-wrapper .upper-controls button{
     padding: 10px 20px;
@@ -36,6 +44,7 @@ div.main-wrapper .upper-controls button{
 }
 div.main-wrapper .upper-controls button i{
     font-size: 1.5rem;
+    color: var(--secondary);
 }
 div.log-container {
     overflow-y: scroll;
@@ -46,14 +55,16 @@ div.log-container {
     margin-bottom: 70px;
     display: flex;
     flex-direction: column-reverse;
-    border: 1px solid red; /* For visualization */
 }
 div.log-container .doodle-overlay{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    background: url("res/doodle-bg1.svg");
+    opacity: 0.2;
 }
 div.log-container div.log-data ul.log-tree {
     list-style: none;
@@ -74,16 +85,17 @@ div.log-container div.log-data ul.log-tree li {
     color: var(--secondary, #ffffff);
     overflow-wrap: break-word;
     position: relative;
+    z-index: 1;
 }
 div.log-input {
     width: 90%;
-    padding: 5px 10px;
+    padding: 0px 10px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    border-radius: 50px;
+    border-radius: 5px;
     position: fixed;
     bottom: 10px;
     left: 50%;
@@ -98,7 +110,7 @@ div.log-input #user-input {
     width: 100%;
     padding: 5px 10px;
     margin: 0;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: transparent;
     color: var(--white);
     font-size: 1rem;
