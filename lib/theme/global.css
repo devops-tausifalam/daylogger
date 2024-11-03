@@ -25,14 +25,11 @@
     font-style: italic;
   }  
 :root{
-    /* --white: #fefefe;
-    --accent-orange: #EB8317;
-    --secondary-yellow: #F3C623;
-    --secondary: #10375C; */
     --primary: #262626;
     --secondary: #e4e7e0;
     --emotionRed: #CC2B52;
-}
+    --shadow: #a2a2a2;
+} 
 /* default-sizing for icons */
 i{
     color: var(--accent-dark);
