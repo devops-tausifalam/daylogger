@@ -127,7 +127,7 @@ div.input-container #user-input {
     line-height: 1.8; /* Adjust line height for vertical centering */
     height: 30px;
     min-height: 30px; /* Set height to control vertical alignment */
-    max-width: 200px;
+    max-height: 200px;
     overflow-y: auto;
     overflow-wrap: break-word;
     resize: none;
