@@ -29,9 +29,12 @@
     --secondary: #e4e7e0;
     --emotionRed: #CC2B52;
     --shadow: #a2a2a2;
+    --accent-primary: #0D92F4;
 } 
 /* default-sizing for icons */
 i{
     color: var(--accent-dark);
     font-size: 1.1rem;
 }
+
+
