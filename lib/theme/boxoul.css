@@ -205,9 +205,6 @@ div.left-menu ul li span{
     font-size: 1.1rem;
     color: var(--secondary);
 }
-div.left-menu ul li span i{
-    color: var(--secondary)
-}
 div.left-menu ul li label{
     margin: 0;
     background-color: var(--secondary);
