@@ -36,4 +36,7 @@ i{
     color: var(--accent-dark);
     font-size: 1.1rem;
 }
+*{
+  border: 2px solid transparent;
+}
 
