@@ -21,7 +21,6 @@ div.main-wrapper{
     box-sizing: border-box;
     max-height: 100%;
     max-width: 100%;
-    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("res/doodle-bg1.svg");
 }
 div.main-wrapper .upper-controls{
     width: 100%;
@@ -100,6 +99,7 @@ div.log-input{
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    border: 2px solid transparent;
     min-height: 48px;
     z-index: 1;
 }
@@ -113,11 +113,12 @@ div.input-container {
     background-color: var(--secondary);
     border-radius: 5px;
     box-shadow: 0px 0px 5px var(--shadow);
+    border: 2px solid transparent;
 }
 
 div.input-container #user-input {
     outline: none;
-    border: none;
+    border: 2px solid transparent;
     width: 100%;
     padding: 5px 10px;
     margin: 0;
@@ -138,11 +139,11 @@ div.input-container #user-input {
 div.input-container #user-input::placeholder {
     color: var(--primary); /* Matches text color */
     opacity: 0.8;
-    line-height: 1.7; /* Matches line height of the input */
+    line-height: 1.8; /* Matches line height of the input */
 }
 div.input-container #log-upload {
     outline: none;
-    border: none;
+    border: 2px solid transparent;
     padding: 5px;
     margin: 0 5px;
     background-color: transparent;
@@ -153,9 +154,9 @@ div.input-container #log-upload {
 }
 div.log-input #log-send{
     outline: none;
-    border: none;
-    width: 40px;
-    height: 40px;
+    border: 2px solid transparent;
+    width: 46px;
+    height: 46px;
     border-radius: 5px;
     margin: 0 0 0 10px;
     background-color: var(--primary);
