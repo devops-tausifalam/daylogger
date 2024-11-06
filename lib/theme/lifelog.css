@@ -59,7 +59,6 @@ div.log-container {
     margin-bottom: 70px;
     display: flex;
     flex-direction: column-reverse;
-    position: relative;
 }
 div.log-container .chatTimeStamp{
     position: absolute;
