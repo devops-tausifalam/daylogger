@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "quote": "Quote text here",
+    "author": "Author Name",
+    "length": 123,
+    "tags": ["tag1", "tag2"]
+  }
+]
