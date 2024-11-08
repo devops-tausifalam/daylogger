@@ -24,6 +24,7 @@
     font-style: italic;
   }  
 :root{
+    --white: #ffffff;
     --primary: #262626;
     --secondary: #e4e7e0;
     --emotionRed: #CC2B52;
