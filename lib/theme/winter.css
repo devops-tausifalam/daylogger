@@ -135,7 +135,7 @@ div.upper-shed .action-box input{
     margin-left: 0; /* Set left margin to 0 */
     border-radius: 30px;
     background-color: transparent;
-    color: var(--white);
+    color: var(--primary);
     font-size: 1rem;
 }
 div.upper-shed .action-box button{
