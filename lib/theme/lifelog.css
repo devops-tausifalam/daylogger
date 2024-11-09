@@ -128,7 +128,7 @@ div.input-container #user-input {
     margin: 0;
     border-radius: 5px;
     background-color: transparent;
-    color: var(--white);
+    color: var(--primary);
     font-size: 1rem;
     line-height: 1.8;
     height: 30px;
