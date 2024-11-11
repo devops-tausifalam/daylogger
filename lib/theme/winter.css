@@ -111,11 +111,7 @@ div.upper-shed .modes .highlights-coffee::after{
     display: block; /* Ensures text is displayed as a block element */
 }
 div.upper-shed .action-box{
-    /* position: fixed;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%); */
-    display: flex;
+    display: flex; 
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -124,7 +120,6 @@ div.upper-shed .action-box{
     margin: 10px auto;
     width: 85%;
     border-radius: 5px;
-    /* box-shadow: 0px 0.1px 4px 0px #8a8a8a; */
 }
 div.upper-shed .action-box input{
     outline: none;

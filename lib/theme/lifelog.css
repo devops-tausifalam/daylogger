@@ -246,3 +246,66 @@ div.empty-text h1{
     color: var(--secondary-dark);
     opacity: 0.7;
 }
+div.share-menu{
+    display: none;
+    position: fixed;
+    bottom: calc(0% + 80px);
+    width: 91.5%;
+    background-color: var(--primary);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: var(--shadow);
+    animation: 0.4s fadeIn;
+}
+div.share-menu .contents {
+    width: 95% !important;
+    margin: 0 auto;
+}
+div.share-menu .contents ul {
+    list-style: none;
+    padding: 5px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.share-menu .contents ul li {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    color: var(--primary);
+    transition: 0.4s;
+}
+div.share-menu .contents ul li:active {
+    background-color: var(--accent-primary);
+}
+div.share-menu .contents ul li i {
+    color: var(--primary);
+    position: relative;
+}
+div.share-menu .contents ul li .imagebtn::after{
+    content: "Image";
+    margin: 5px;
+    font-size: 1rem;
+    position: absolute;
+    top: -5px;
+    font-family: "Lato", sans-serif;
+}
+div.share-menu .contents ul li .microphonebtn::after{
+    content: "Audio";
+    margin: 5px;
+    font-size: 1rem;
+    position: absolute;
+    top: -5px;
+    font-family: "Lato", sans-serif;
+}
+.close-share {
+    color: var(--secondary);
+    float: right;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+}
