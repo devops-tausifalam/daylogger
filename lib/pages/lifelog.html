@@ -22,6 +22,7 @@
                 <i class='bx bx-dots-vertical-rounded'></i>
             </button>
         </div>
+        <!-- three-dot menu -->
         <div class="left-menu">
             <ul>
                 <li aria-label="s-enterSend-toggle">
@@ -46,6 +47,22 @@
                 </li>
             </ul>
         </div>
+        <!-- bottom menu for sharing options -->
+         <div class="share-menu">
+            <div class="contents">
+                <sup class="close-share" onclick="closeShare()">
+                    <i class='bx bx-x-circle'></i>
+                </sup>
+                <ul>
+                    <li>
+                        <i class='bx bxs-image-add imagebtn'></i>
+                    </li>
+                    <li>
+                        <i class='bx bxs-microphone microphonebtn'></i>
+                    </li>
+                </ul>
+            </div>
+         </div>
 
         <!-- empty screen text -->
 
@@ -69,7 +86,7 @@
         <div class="log-input">
             <div class="input-container">
                 <textarea id="user-input" autocomplete="off" placeholder="Write here" type="text"></textarea>
-                <button id="log-upload">
+                <button id="log-upload" onclick="openShare()">
                     <i class='bx bx-paperclip'></i>
                 </button> 
             </div>
