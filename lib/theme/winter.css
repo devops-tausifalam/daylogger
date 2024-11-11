@@ -197,6 +197,7 @@ div.motivationBox-wrapper {
     position: relative; /* To position the overlay over the background image */
     width: 85vw;
     min-height: 89px !important;
+    aspect-ratio: 16/9;
     padding: 10px;
     margin: 0 0 10px 0;
     background-size: cover;
