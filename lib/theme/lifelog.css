@@ -256,6 +256,7 @@ div.share-menu{
     border: 2px solid transparent;
     box-shadow: var(--shadow);
     animation: 0.4s fadeIn;
+    z-index: 1;
 }
 div.share-menu .contents {
     width: 95% !important;
