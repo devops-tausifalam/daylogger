@@ -302,10 +302,3 @@ div.share-menu .contents ul li .microphonebtn::after{
     top: -5px;
     font-family: "Lato", sans-serif;
 }
-.close-share {
-    color: var(--secondary);
-    float: right;
-    padding: 5px;
-    margin: 0;
-    cursor: pointer;
-}
