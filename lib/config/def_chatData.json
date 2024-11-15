@@ -1,0 +1,42 @@
+{
+   "ON_A_GIVEN_DAY": [
+        {
+            "id": "mssg1",
+            "sender": "admin",
+            "timestamp": "2024-11-15T10:00:00Z",
+            "type": "text", 
+            "content": "Hello, world!", 
+            "audio": { 
+              "exists": true,
+              "audioStamp": "2024-11-15T10:00:00Z",
+              "blobKeyForAudio": "blob-id-for-audio",
+              "duration": 15 
+            },
+            "image": { 
+                "exists": true, 
+                "imageStamp": "2024-11-15T10:00:00Z",
+                "blobKeyForImg": "blob-id-for-image", 
+                "resolution": { "width": 1280, "height": 720 } 
+            }
+          },
+          {
+            "id": "mssg2",
+            "sender": "admin",
+            "timestamp": "2024-11-15T10:00:00Z",
+            "type": "text", 
+            "content": "Hello, world!", 
+            "audio": { 
+              "exists": true, 
+              "audioStamp": "2024-11-15T10:00:00Z",
+              "blobKeyForAudio": "blob-id-for-audio", 
+              "duration": 15 
+            },
+            "image": { 
+                "exists": true, 
+                "imageStamp": "2024-11-15T10:00:00Z",
+                "blobKeyForImg": "blob-id-for-image", 
+                "resolution": { "width": 1280, "height": 720 } 
+            }
+          }
+    ]
+}
