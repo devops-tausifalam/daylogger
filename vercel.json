@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/lib/pages/lifelog.html", "permanent": false }
+  ]
+}
