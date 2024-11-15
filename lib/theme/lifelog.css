@@ -256,6 +256,7 @@ div.share-menu{
     border: 2px solid transparent;
     box-shadow: var(--shadow);
     animation: 0.4s fadeIn;
+    z-index: 1;
 }
 div.share-menu .contents {
     width: 95% !important;
@@ -301,11 +302,4 @@ div.share-menu .contents ul li .microphonebtn::after{
     position: absolute;
     top: -5px;
     font-family: "Lato", sans-serif;
-}
-.close-share {
-    color: var(--secondary);
-    float: right;
-    padding: 5px;
-    margin: 0;
-    cursor: pointer;
 }
