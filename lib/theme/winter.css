@@ -202,11 +202,11 @@ div.motivationBox-wrapper {
     box-shadow: var(--shadow);
 }
 div.motivationBox-wrapper div.motivationBox blockquote{
-    color: var(--white);
+    color: var(--secondary);
 }
 div.motivationBox-wrapper div.motivationBox p{
     text-align: center;
-    color: var(--white);
+    color: var(--secondary);
 }
 div.quoteBox{
     visibility: hidden;

@@ -60,17 +60,6 @@ div.log-container {
     display: flex;
     flex-direction: column-reverse;
 }
-div.log-container .chatTimeStamp{
-    position: absolute;
-    right: 5px;
-    bottom: 0;
-    font-size: 0.8em;
-    font-style: italic;
-    white-space: nowrap;
-}
-div.log-container .chatTxt{
-    margin: auto 0.8em auto auto;
-}
 div.log-container div.log-data ul.log-tree {
     list-style: none;
     margin: 0;
@@ -84,13 +73,40 @@ div.log-container div.log-data ul.log-tree li {
     margin: 2px 0;
     width: fit-content;
     max-width: 70%;
-    padding: 5px 8px; /* Reduced padding */
+    padding: 5px 10px; /* Reduced padding */
     padding-bottom: 20px;
     border-radius: 4px; /* Slightly smaller border-radius */
     background-color: var(--primary);
     color: var(--secondary, #ffffff);
     overflow-wrap: break-word;
     position: relative;
+}
+div.log-container .chatTimeStamp{
+    position: absolute;
+    right: 2.5px;
+    bottom: 0;
+    font-size: 0.8em;
+    font-style: italic;
+    white-space: nowrap;
+}
+div.log-container .chatTxt{
+    margin: auto 2em auto auto;
+}
+div.log-container div.log-data div.sessionID{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+div.log-container div.log-data p.session {
+    width: fit-content;
+    color: var(--secondary);
+    padding: 5px 5px;
+    background-color: var(--primary);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
 }
 div.log-input{
     width: 95%;
