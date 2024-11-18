@@ -166,17 +166,18 @@ div.input-container div.divider{
     height: 25px;
     background-color: var(--primary-light);
 }
-div.input-container button{
+div.input-container div.moodicons{
     outline: none;
     cursor: pointer;
     background: none;
     padding: none;
+    margin: auto 5px;
 }
-div.input-container button.redYou i{
+div.input-container .moodicons.redYou i{
     color: var(--emotionRed);
     font-size: 1.3rem;
 }
-div.input-container button.bluYou i{
+div.input-container .moodicons.bluYou i{
     color: var(--accent-primary);
     font-size: 1.4rem;
 }
