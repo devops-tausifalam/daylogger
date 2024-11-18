@@ -67,7 +67,14 @@ div.log-container div.log-data ul.log-tree {
     display: flex;
     flex-direction: column;
 }
-
+div.log-container div.log-data ul.log-tree li.blu{
+    align-self: flex-end;
+    background-color: var(--accent-primary);
+}
+div.log-container div.log-data ul.log-tree li.red{
+    align-self: flex-start;
+    background-color: var(--emotionRed);
+}
 div.log-container div.log-data ul.log-tree li {
     align-self: flex-end;
     margin: 2px 0;
@@ -76,7 +83,7 @@ div.log-container div.log-data ul.log-tree li {
     padding: 5px 10px; /* Reduced padding */
     padding-bottom: 20px;
     border-radius: 4px; /* Slightly smaller border-radius */
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
     color: var(--secondary, #ffffff);
     overflow-wrap: break-word;
     position: relative;
