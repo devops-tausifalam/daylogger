@@ -72,11 +72,11 @@ div.log-container div.log-data ul.log-tree li.blu{
     background-color: var(--accent-primary);
 }
 div.log-container div.log-data ul.log-tree li.red{
-    align-self: flex-start;
+    align-self: flex-end;
     background-color: var(--emotionRed);
 }
 div.log-container div.log-data ul.log-tree li.yellow{
-    align-self: flex-start;
+    align-self: flex-end;
     background-color: var(--meh);
     color: var(--secondary);
 }
