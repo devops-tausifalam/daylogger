@@ -47,20 +47,6 @@
                 </li>
             </ul>
         </div>
-        <!-- bottom menu for sharing options -->
-         <div class="share-menu">
-            <div class="contents">
-                <ul>
-                    <li>
-                        <i class='bx bxs-image-add imagebtn'></i>
-                    </li>
-                    <li>
-                        <i class='bx bxs-microphone microphonebtn'></i>
-                    </li>
-                </ul>
-            </div>
-         </div>
-
         <!-- empty screen text -->
 
         <div class="empty-text">
@@ -87,9 +73,13 @@
         <div class="log-input">
             <div class="input-container">
                 <textarea id="user-input" autocomplete="off" placeholder="Write here" type="text"></textarea>
-                <button id="log-upload" onclick="toggleShare()">
-                    <i class='bx bx-paperclip'></i>
-                </button> 
+                <div class="divider"></div>
+                <button class="redYou">
+                    <i class='bx bx-angry'></i>
+                </button>
+                <button class="bluYou">
+                    <i class='bx bx-happy'></i>
+                </button>
             </div>
             <button id="log-send">
                 <i class='bx bx-send'></i>
