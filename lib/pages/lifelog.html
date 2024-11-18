@@ -74,11 +74,16 @@
             <div class="input-container">
                 <textarea id="user-input" autocomplete="off" placeholder="Write here" type="text"></textarea>
                 <div class="divider"></div>
-                <div class="moodicons redYou" onclick="pessimist()">
-                    <i class='bx bx-angry' id="angryme"></i>
-                </div>
-                <div class="moodicons bluYou" onclick="optimist()">
-                    <i class='bx bxs-happy' id="happyme"></i>
+                <div class="moodContainer">
+                    <div class="moodicons bluYou" onclick="optimist()">
+                        <i class='bx bxs-happy' id="happyme"></i>
+                    </div>
+                    <div class="moodicons yellowYou" onclick="sad()">
+                        <i class='bx bx-meh' id="sadme"></i>
+                    </div>
+                    <div class="moodicons redYou" onclick="pessimist()">
+                        <i class='bx bx-angry' id="angryme"></i>
+                    </div>
                 </div>
             </div>
             <button id="log-send">

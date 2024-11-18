@@ -75,6 +75,11 @@ div.log-container div.log-data ul.log-tree li.red{
     align-self: flex-start;
     background-color: var(--emotionRed);
 }
+div.log-container div.log-data ul.log-tree li.yellow{
+    align-self: flex-start;
+    background-color: var(--meh);
+    color: var(--secondary);
+}
 div.log-container div.log-data ul.log-tree li {
     align-self: flex-end;
     margin: 2px 0;
@@ -173,6 +178,10 @@ div.input-container div.divider{
     height: 25px;
     background-color: var(--primary-light);
 }
+div.input-container div.moodContainer {
+    display: flex;
+    flex-direction: row;
+}
 div.input-container div.moodicons{
     outline: none;
     cursor: pointer;
@@ -186,6 +195,10 @@ div.input-container .moodicons.redYou i{
 }
 div.input-container .moodicons.bluYou i{
     color: var(--accent-primary);
+    font-size: 1.4rem;
+}
+div.input-container .moodicons.yellowYou i{
+    color: var(--meh);
     font-size: 1.4rem;
 }
 div.log-input #log-send{
