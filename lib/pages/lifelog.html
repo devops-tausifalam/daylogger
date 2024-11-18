@@ -74,11 +74,11 @@
             <div class="input-container">
                 <textarea id="user-input" autocomplete="off" placeholder="Write here" type="text"></textarea>
                 <div class="divider"></div>
-                <div class="moodicons redYou">
-                    <i class='bx bx-angry'></i>
+                <div class="moodicons redYou" onclick="pessimist()">
+                    <i class='bx bx-angry' id="angryme"></i>
                 </div>
-                <div class="moodicons bluYou">
-                    <i class='bx bxs-happy'></i>
+                <div class="moodicons bluYou" onclick="optimist()">
+                    <i class='bx bxs-happy' id="happyme"></i>
                 </div>
             </div>
             <button id="log-send">
