@@ -1,51 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap');
-@import url('animate.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap");
+@import url("animate.min.css");
 .lato-thin {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .lato-regular {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .lato-bold {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .lato-regular-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }  
-:root{
-    --primary: #000000;
-    --primary-lightest: #f2f2f2;
-    --primary-light: #b3b3b3;
-    --primary-dark: #333333;
-    --primary-darker: #1a1a1a;
-    --primary-darkest: #0d0d0d;
-    --secondary: #ffffff;
-    --emotionRed: #CC2B52;
-    --secondary-dark: #a2a2a2;
-    --accent-primary: #0D92F4;
-    --meh: #3B1E54;
-    --shadow: 0px 4px 10px rgba(0, 0, 0, 0.08), /* soft larger shadow */
-    0px 2px 6px rgba(0, 0, 0, 0.05),  /* medium shadow */
-    0px 1px 3px rgba(0, 0, 0, 0.1);   /* smaller, sharper shadow */
-
-    
-} 
-/* default-sizing for icons */
-i{
-    font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
-input , button{
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+:root {
+  --primary: #000000;
+  --primary-lightest: #f2f2f2;
+  --primary-light: #b3b3b3;
+  --primary-dark: #333333;
+  --primary-darker: #1a1a1a;
+  --primary-darkest: #0d0d0d;
+  --secondary: #ffffff;
+  --emotionRed: #cc2b52;
+  --secondary-dark: #a2a2a2;
+  --accent-primary: #0d92f4;
+  --meh: #3b1e54;
+  --shadow: 0px 4px 10px rgba(0, 0, 0, 0.08),
+    /* soft larger shadow */ 0px 2px 6px rgba(0, 0, 0, 0.05),
+    /* medium shadow */ 0px 1px 3px rgba(0, 0, 0, 0.1); /* smaller, sharper shadow */
+}
+/* default-sizing for icons */
+i {
+  font-size: 1.1rem;
+}
+input,
+button {
   border: 2px solid transparent;
 }
-
