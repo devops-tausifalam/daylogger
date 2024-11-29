@@ -1,97 +1,107 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Boxoul - lifelog
-        </title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <!-- <meta http-equiv="refresh" content="0"/> -->
-        <link id="appTheme" rel="stylesheet" href="../theme/lifelog.css" type="text/css"/>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
+  <head>
+    <title>Boxoul - lifelog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="0"/> -->
+    <link
+      id="appTheme"
+      rel="stylesheet"
+      href="../theme/lifelog.css"
+      type="text/css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="main-wrapper">
-        <div class="upper-controls">
-            <button class="backBtn" onclick="BackToHome()">
-                <i class='bx bx-arrow-back'></i>
-            </button>
-            <h1>
-                Lifelog 
-            </h1>
-            <button class="chatSettings">
-                <i class='bx bx-dots-vertical-rounded'></i>
-            </button>
-        </div>
-        <!-- three-dot menu -->
-        <div class="left-menu">
-            <ul>
-                <li aria-label="s-enterSend-toggle">
-                    <span>
-                      Enter is Send 
-                    </span>
-                    <input type="checkbox" name="enterIsSend" id="enterIsSend" hidden>
-                    <label for="enterIsSend"></label>
-                </li>
-                <li aria-label="s-dissappearingMssg-toggle">
-                    <span>
-                      Disappearing <br/> 
-                      Messages
-                    </span>
-                    <input type="checkbox" name="Dmssg" id="Dmssg" hidden>
-                    <label for="Dmssg"></label>
-                </li>
-                <li aria-label="clearChat" style="cursor: pointer;" onclick="removeLogs()">
-                    <span>
-                        Clear chat
-                    </span>
-                </li>
-            </ul>
-        </div>
-        <!-- empty screen text -->
+      <div class="upper-controls">
+        <button class="backBtn" onclick="BackToHome()">
+          <i class="bx bx-arrow-back"></i>
+        </button>
+        <h1>Lifelog</h1>
+        <button class="chatSettings">
+          <i class="bx bx-dots-vertical-rounded"></i>
+        </button>
+      </div>
+      <div class="information-box">
+            <span>
+                <span class="mssg" id="bulletin">Dissapparing Messages (turned-off)</span>
+            </span>
+      </div>
+      <!-- three-dot menu -->
+      <div class="left-menu">
+        <ul>
+          <li aria-label="s-enterSend-toggle">
+            <span> Enter is Send </span>
+            <input type="checkbox" name="enterIsSend" id="enterIsSend" hidden />
+            <label for="enterIsSend"></label>
+          </li>
+          <li aria-label="s-dissappearingMssg-toggle">
+            <span>
+              Disappearing <br />
+              Messages
+            </span>
+            <input type="checkbox" name="Dmssg" id="Dmssg" hidden />
+            <label for="Dmssg"></label>
+          </li>
+          <li
+            aria-label="clearChat"
+            style="cursor: pointer"
+            onclick="removeLogs()"
+          >
+            <span> Clear chat </span>
+          </li>
+        </ul>
+      </div>
+      <!-- empty screen text -->
 
-        <div class="empty-text">
-            <h1>
-                Be. <br/>
-                Yourself.
-            </h1>
-        </div>
+      <div class="thought-text">
+        <h1>
+          Be. <br />
+          Yourself.
+        </h1>
+      </div>
 
-         <!-- log-sheets -->
-            <div class="log-container" id="log-container">
-               
+      <!-- log-sheets -->
+      <div class="log-container" id="log-container">
         <!-- posts -->
         <div class="log-data">
-            <div class="sessionID">
-                <!-- DOM -->
-                <p class="session" hidden>today</p>
-            </div>
-            <ul class="log-tree" id="log-tree">
-                <!-- DOM MANIPULATION -->
-            </ul>
-        </div>  
-            </div>
-        <div class="log-input">
-            <div class="input-container">
-                <textarea id="user-input" autocomplete="off" placeholder="Write here" type="text"></textarea>
-                <div class="divider"></div>
-                <div class="moodContainer">
-                    <div class="moodicons bluYou" onclick="optimist()">
-                        <i class='bx bxs-happy' id="happyme"></i>
-                    </div>
-                    <div class="moodicons yellowYou" onclick="sad()">
-                        <i class='bx bx-meh' id="sadme"></i>
-                    </div>
-                    <div class="moodicons redYou" onclick="pessimist()">
-                        <i class='bx bx-angry' id="angryme"></i>
-                    </div>
-                </div>
-            </div>
-            <button id="log-send">
-                <i class='bx bx-send'></i>
-            </button>
+          <ul class="log-tree" id="log-tree">
+            <!-- DOM MANIPULATION -->
+          </ul>
         </div>
+      </div>
+      <div class="log-input">
+        <div class="input-container">
+          <textarea
+            id="user-input"
+            autocomplete="off"
+            placeholder="Write here"
+            type="text"
+          ></textarea>
+          <div class="divider"></div>
+          <div class="moodContainer">
+            <div class="moodicons bluYou" onclick="optimist()">
+              <i class="bx bxs-happy" id="happyme"></i>
+            </div>
+            <div class="moodicons yellowYou" onclick="sad()">
+              <i class="bx bx-meh" id="sadme"></i>
+            </div>
+            <div class="moodicons redYou" onclick="pessimist()">
+              <i class="bx bx-angry" id="angryme"></i>
+            </div>
+          </div>
+        </div>
+        <button id="log-send">
+          <i class="bx bx-send"></i>
+        </button>
+      </div>
     </div>
-        <!-- Scripts -->
-        <script type="text/javascript" src="../lifelog.js"></script>
-    </body>
+    <!-- Scripts -->
+    <script type="text/javascript" src="../pouchdb.min.js"></script>
+    <script type="text/javascript" src="../lifelog.js"></script>
+  </body>
 </html>

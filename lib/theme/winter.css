@@ -1,34 +1,41 @@
 @import url('global.css');
 
-*{
+/* Global Styles */
+* {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-body,html{
+
+body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     /* overflow: hidden; */
 }
-div.main-wrapper{
+
+div.main-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
-div.upper-wrap-main{
+
+/* Upper Section */
+div.upper-wrap-main {
     background-color: var(--primary);
 }
-div.upper-shed{
+
+div.upper-shed {
     box-sizing: border-box;
     width: 100vw;
     padding: 10px;
     margin: 0 0 10px 0;
 }
-div.upper-shed div.hero-zone{
+
+div.upper-shed div.hero-zone {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,14 +44,16 @@ div.upper-shed div.hero-zone{
     padding: 10px 15px;
     margin: 0;
 }
-div.upper-shed .modes{
+
+div.upper-shed .modes {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
 }
-div.upper-shed .modes button{
+
+div.upper-shed .modes button {
     padding: 15px;
     border: none;
     outline: none;
@@ -55,104 +64,57 @@ div.upper-shed .modes button{
     margin: 0 10px calc(15px + 0.9em) 10px;
     cursor: pointer;
 }
-div.upper-shed .modes .pomodoro-mode::after{
+
+/* Mode Labels */
+div.upper-shed .modes .pomodoro-mode::after,
+div.upper-shed .modes .timebox::after,
+div.upper-shed .modes .stats::after,
+div.upper-shed .modes .blurt::after,
+div.upper-shed .modes .highlights-coffee::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--secondary);
+    font-size: 0.9em;
+    white-space: nowrap;
+    display: block;
+}
+
+div.upper-shed .modes .pomodoro-mode::after {
     content: 'Focus';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--secondary);
-    font-size: 0.9em;
-    white-space: nowrap; /* Prevents text wrapping if not desired */
-    display: block; /* Ensures text is displayed as a block element */
 }
-div.upper-shed .modes .timebox::after{
+
+div.upper-shed .modes .timebox::after {
     content: 'Timebox';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--secondary);
-    font-size: 0.9em;
-    white-space: nowrap; /* Prevents text wrapping if not desired */
-    display: block; /* Ensures text is displayed as a block element */
 }
-div.upper-shed .modes .stats::after{
+
+div.upper-shed .modes .stats::after {
     content: 'Tracker';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--secondary);
-    font-size: 0.9em;
-    white-space: nowrap; /* Prevents text wrapping if not desired */
-    display: block; /* Ensures text is displayed as a block element */
 }
-div.upper-shed .modes .blurt::after{
+
+div.upper-shed .modes .blurt::after {
     content: 'Blurt';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--secondary);
-    font-size: 0.9em;
-    white-space: nowrap; /* Prevents text wrapping if not desired */
-    display: block; /* Ensures text is displayed as a block element */
 }
-div.upper-shed .modes .highlights-coffee::after{
+
+div.upper-shed .modes .highlights-coffee::after {
     content: 'Coffee';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--secondary);
-    font-size: 0.9em;
-    white-space: nowrap; /* Prevents text wrapping if not desired */
-    display: block; /* Ensures text is displayed as a block element */
 }
-div.upper-shed .action-box{
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary);
-    padding: 3px 15px;
-    margin: 10px auto;
-    width: 85%;
-    border-radius: 5px;
-}
-div.upper-shed .action-box input{
-    outline: none;
-    border: none;
-    width: calc(100% - 30px); /* Adjust width to consider padding */
-    height: 100%; /* Match height to the parent */
-    padding: 10px;
-    margin-left: 0; /* Set left margin to 0 */
-    border-radius: 30px;
-    background-color: transparent;
-    color: var(--primary);
-    font-size: 1rem;
-}
-div.upper-shed .action-box button{
-    outline: none;
-    border: none;
-    padding: 10px;
-    margin: 0 2px 0 2px;
-    background-color: transparent;
-    border-radius: 30px;
-    text-align: center;
-    cursor: pointer;
-}
-div.upper-shed .hero-zone .heading h1{
+
+/* Hero Zone Heading */
+div.upper-shed .hero-zone .heading h1 {
     color: var(--secondary);
 }
+
+/* Floating Action Button (FAB) Styles */
 div.fab-contents {
     align-self: flex-end;
     position: fixed;
     bottom: 15px;
     margin: 15px;
 }
-div.fab button{
+
+div.fab button {
     padding: 15px;
     border: none;
     outline: none;
@@ -162,38 +124,42 @@ div.fab button{
     border-radius: 50%;
     box-shadow: var(--shadow);
 }
-div.fab button:nth-child(1){
+
+div.fab button:nth-child(1)
+ {
     background-color: var(--secondary);
     color: var(--primary);
     animation: jackInTheBox 0.5s;
 }
-div.fab button:nth-child(2){
-    background-color: var(--secondary);
-    color: var(--primary);
-    animation: jackInTheBox 0.5s;
+
+div.fab 
+button.inside-fxn-boxoul {
+    display: none;
 }
+
+div.fab button i {
+    font-size: 24px;
+}
+
 .active {
     animation: rotateIn 0.5s;
 }
-div.fab button.inside-fxn-coffee, button.inside-fxn-boxoul{
-    display: none;
-}
-div.fab button i{
-    font-size: 24px;
-}
+
+/* Motivation Box Styles */
 div.motivationBox-wrapper {
     margin-top: 20px;
 }
+
 .motivationBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative; /* To position the overlay over the background image */
-    aspect-ratio: 16/9;
+    position: relative;
+    aspect-ratio: 16 / 9;
     width: 85vw;
     min-height: 89px !important;
-    max-height: 680px; /* prevents over enlargements */
+    max-height: 680px;
     padding: 10px;
     margin: 0 0 10px 0;
     background-size: cover;
@@ -201,18 +167,20 @@ div.motivationBox-wrapper {
     border-radius: 5px;
     box-shadow: var(--shadow);
 }
-div.motivationBox-wrapper div.motivationBox blockquote{
-    color: var(--secondary);
-}
-div.motivationBox-wrapper div.motivationBox p{
+
+div.motivationBox-wrapper div.motivationBox blockquote,
+div.motivationBox-wrapper div.motivationBox p {
     text-align: center;
     color: var(--secondary);
 }
-div.quoteBox{
+
+div.quoteBox {
     visibility: hidden;
     animation: fadeIn 0.7s ease;
 }
-div.motivationBox-wrapper div.motivationBox div.progress{
+
+/* Progress Overlay */
+div.motivationBox-wrapper div.motivationBox div.progress {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -222,7 +190,8 @@ div.motivationBox-wrapper div.motivationBox div.progress{
     border-radius: 5px;
     background: transparent;
 }
-div.motivationBox-wrapper div.motivationBox div.progress .progress-circle{
+
+div.motivationBox-wrapper div.motivationBox div.progress .progress-circle {
     width: 24px;
     height: 24px;
     border: 2.4px solid var(--primary);
@@ -230,10 +199,16 @@ div.motivationBox-wrapper div.motivationBox div.progress .progress-circle{
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
 }
+
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
-div.motivationBox-wrapper div.motivationBox .errorMssg{
+
+div.motivationBox-wrapper div.motivationBox .errorMssg {
     display: none;
 }
