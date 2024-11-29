@@ -214,6 +214,7 @@ div.left-menu {
   margin: 10px;
   position: relative;
   transition: 0.1s ease-in-out;
+  visibility: hidden;
 }
 div.left-menu::before {
   content: "";
@@ -269,6 +270,10 @@ div.left-menu input:checked + label {
 div.left-menu input:checked + label::before {
   transform: translateX(18px);
   background-color: var(--secondary);
+}
+div.left-menu.visible {
+  visibility: visible;
+  transform: scale(1);
 }
 div.thought-text {
   position: fixed;
