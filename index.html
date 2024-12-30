@@ -1,81 +1,74 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Boxoul - Main
-        </title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <!-- <meta http-equiv="refresh" content="0"/> -->
-        <link id="appTheme" rel="stylesheet" href="lib/theme/winter.css" type="text/css"/>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-        <div class="main-wrapper">
-        <!-- upper-wrap -->
-         <div class="upper-wrap-main">
-            <div class="upper-shed">
-                <div class="hero-zone">
-                    <div class="heading">
-                       <!-- DOM MANIPULATION --> 
-                    </div>
-                </div>
-                <div class="modes">
-                    <button class="pomodoro-mode">
-                        <i class='bx bxs-hourglass-bottom'></i>
-                    </button>
-                    <button class="timebox">
-                        <i class='bx bx-calendar'></i>
-                    </button>
-                    <button class="stats">
-                        <i class='bx bx-line-chart'></i>
-                    </button>
-                    <button class="highlights-coffee">
-                        <i class='bx bx-coffee-togo'></i>
-                    </button>
-                </div>
-             <!-- <div class="action-box">
-                        <input type="text" id="search-filter" placeholder="Explore">
-                        <button id="theme-switch-btn">
-                            <i class='bx bxs-paint-roll'></i>
-                        </button>
-                        <button id="settings-page">
-                            <i class='bx bxs-cog'></i>
-                        </button>
-               </div> -->
-            </div>
-        </div> 
-
+  <head>
+    <title>Boxoul - Main</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="0"/> -->
+    <link
+      id="appTheme"
+      rel="stylesheet"
+      href="lib/theme/winter.css"
+      type="text/css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="contentDiv">
+      <div class="main-wrapper">
         <!-- motivate me -->
-         <div class="motivationBox-wrapper">
-            <div class="motivationBox">
-                <div class="progress">
-                    <div class="progress-circle">
-                        <!-- css -->
-                    </div>
-                </div>
-                <div class="quoteBox">
-                    <blockquote id="quote">
-                        <!-- dom manipulation -->
-                    </blockquote>
-                    <p id="author">
-                        <!-- dom manipulation -->
-                    </p>
-                </div>
+        <div class="motivationBox-wrapper">
+          <div class="motivationBox">
+            <div class="progress">
+              <div class="progress-circle">
+                <!-- css -->
+              </div>
             </div>
-         </div>
+            <div class="quoteBox">
+              <blockquote id="quote">
+                <!-- dom manipulation -->
+              </blockquote>
+              <p id="author">
+                <!-- dom manipulation -->
+              </p>
+            </div>
+          </div>
 
-        <div class="fab-contents">
-            <div class="fab">
-                <button class="inside-fxn-boxoul" onclick="location.href='lib/pages/lifelog.html'">
-                    <i class='bx bxs-message-square-dots'></i>
-                </button>
-                <button class="fab-pencil" >
-                    <i class='bx bxs-pencil'></i>
-                </button>
-            </div>
+          <!-- rest of the contents -->
+           <p class="abbr">
+            Made with <span>love</span> for you. <br/>
+            Don't stress! be <span>vocal</span> and <span>loud</span> <br/>
+           </p>
         </div>
+      </div>
     </div>
-        <!-- Scripts -->
-        <script type="text/javascript" src="lib/main.js"></script>
-    </body>
+    <!-- navs -->
+    <div class="footer">
+      <div class="controls">
+        <button data-label="Focus">
+          <i class="bx bxs-hourglass"></i>
+        </button>
+        <button data-label="Planner">
+          <i class="bx bx-calendar"></i>
+        </button>
+        <button data-label="Habits">
+          <i class="bx bx-line-chart"></i>
+        </button>
+        <button data-label="Relax">
+          <i class="bx bx-coffee"></i>
+        </button>
+        <button
+          data-label="Lifelog"
+          onclick="location.href = '/lib/pages/lifelog.html'"
+        >
+          <i class="bx bx-message-square-dots"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
 </html>
